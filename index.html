@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Your description goes here">
   <meta name="keywords" content="one, two, three">
-  
+
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Document</title>
+  <title>gameOn</title>
 
   <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
@@ -20,8 +20,22 @@
 </head>
 
 <body>
-
-  <script type="text/javascript" src="js/main.js"></script>
+  <div class="board" id="board">
+    <div class="cell x" data-cell></div>
+    <div class="cell circle" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell circle" data-cell></div>
+  </div>
+  <div class="winning-message" id="winningMessage">
+    <div data-winning-message-text> X Wins!</div>
+    <button id="restartButton">Restart</button>
+  </div>
+  <script type="text/javascript" src="js/main.js" defer></script>
 </body>
 
 </html>
